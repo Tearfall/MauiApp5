@@ -50,6 +50,7 @@
             <Image
                 x:Name="Target"
                 HeightRequest="120"
+                WidthRequest="120"
                 Source="sunset.jfif"
                 Grid.Row="2">
                 
