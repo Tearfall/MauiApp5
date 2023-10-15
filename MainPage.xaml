@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5.MainPage">
+
+    <ScrollView>
+        <Grid
+            Padding="20"
+            RowSpacing="0"
+            RowDefinitions="Auto, Auto, *">
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                Grid.Row="0">
+
+                <Label
+                    Text="Vertical"
+                    VerticalOptions="Center"/>
+                <Button
+                    Text="Start"
+                    Clicked="OnVerticalStart"/>
+                <Button
+                    Text="Center"
+                    Clicked="OnVerticalCenter"/>
+                <Button
+                    Text="End"
+                    Clicked="OnVerticalEnd"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                Grid.Row="1">
+                
+                <Label
+                    Text="Horizontal"
+                    VerticalOptions="Center"/>
+                <Button
+                    Text="Start"
+                    Clicked="OnHorizontalStart"/>
+                <Button
+                    Text="Center"
+                    Clicked="OnHorizontalCenter"/>
+                <Button
+                    Text="End"
+                    Clicked="OnHorizontalEnd"/>
+            </HorizontalStackLayout>
+            
+            <Image
+                x:Name="Target"
+                HeightRequest="120"
+                Source="sunset.jfif"
+                Grid.Row="2">
+                
+            </Image>
+            
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
